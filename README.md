@@ -1,4 +1,6 @@
 ### 说明
+#### 基于screw项目数据库表结构文档生成Demo
+#### screw 项目地址：https://github.com/pingfangushi/screw.git，欢迎更多同学的加入
 #### 修改数据源
 > src/test/resource 下 application.properties修改数据库连接
 
