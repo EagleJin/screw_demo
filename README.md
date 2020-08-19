@@ -1,21 +1,10 @@
 ### 说明
 #### 基于screw项目数据库表结构文档生成Demo
 #### screw 项目地址：https://github.com/pingfangushi/screw.git，欢迎更多同学的加入
-#### 修改数据源
-> src/test/resource 下 application.properties修改数据库连接
+#### 修改配置
+> 根据application.yml中的配置说明修改即可
 
-#### 修改生成文档设置
-> 文件：src/test/java 下 DatabaseDocGeneratorApplicationTests.java  
+#### 运行
+> 直接运行DatabaseDocGeneratorApplication中的main方法即可 
 
-> 第31行，根据实际修改路径
-
-> 第35行，根据实际需要修改生成文档格式
-
-> 第39行，设置生成文件的名称
-
-> 第43行，设置文档的版本号
-
-> 第53行，getProcessConfig 方法中设置生成指定表、忽略表等
-
-### 运行
-#### DatabaseDocGeneratorApplicationTests 文件中 右键 运行 contextLoads() 即可。
+#### 说明：程序执行完成后会自动退出

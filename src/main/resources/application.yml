@@ -1,0 +1,48 @@
+# 程序使用端口
+server:
+  port: 1175
+
+spring:
+  datasource: # 数据库配置
+    url: jdbc:mysql://192.168.1.31:3306/mos?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: ysten123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 文档生成参数设置
+system:
+  docs:
+    output:
+      # 文档生成目录，默认在软件所在目录
+      dir: /screw/docs
+      
+    file:
+      # 生成文档的格式，目前支持：HTML、Markdown、Doc这三种
+      type: Doc
+      
+    # 文档标题名称      
+    title: XXX系统数据库设计文档  
+    
+    # 生成文档的版本号
+    version: 1.0.0     
+    
+    # 生成文档的描述
+    desc: 数据库设计说明           
+
+    # 忽略表设置
+    ignore:
+      # 忽略指定的表（完整表名）
+      tableName: test_user,test_group   
+      
+      # 忽略指定的表前缀的表
+      prefix: test_,user_   
+
+      # 忽略指定的表后缀的表      
+      suffix: _test,_08                 
+
+    # 指定表设置
+    # 注意：如果指定表名、指定表前缀、指定表后缀生成文档，则指定的忽略设置将失效
+    designated:
+      tableName:
+      prefix:
+      suffix:
